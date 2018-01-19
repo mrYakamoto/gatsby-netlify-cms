@@ -1,0 +1,17 @@
+options:
+  # config-file: ./node_modules/sass-lint-config-ctrl/.sass-lint.yml
+  merge-default-rules: true
+files:
+  include: 'src/**/*.scss'
+rules:
+  nesting-depth:
+    - 1
+    - max-depth: 3
+  no-ids:
+    - 0
+  no-vendor-prefixes:
+    - 0
+  brace-style:
+    - 1
+    - style: 'stroustrup'
+    - allow-single-line: true

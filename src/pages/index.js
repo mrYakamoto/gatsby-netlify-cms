@@ -1,9 +1,8 @@
 export default () => {
-
   return (
     <div>
       <header className='grid-container'>
-        <div className='grid-x grid-padding-x'> 
+        <div className='grid-x grid-padding-x'>
           <h1 className='cell'>Header</h1>
         </div>
       </header>

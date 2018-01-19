@@ -1,0 +1,16 @@
+printf "Running ESLint:\n\n"
+eslint \
+  --format stylish \
+  --ext .js,.jsx src/
+eslintResult=$?
+
+printf "Running SASS linter:\n\n"
+sass-lint \
+  --config .sass-lint.yml \
+  --format stylish \
+  --verbose
+sassLintResult=$?
+
+echo "Finished linting."
+
+! (( $eslintResult | $sassLintResult ))

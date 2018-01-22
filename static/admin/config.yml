@@ -4,6 +4,7 @@ backend:
 
 media_folder: static/assets
 
+# collections must have either a title or a path field
 collections:
   - name: blog
     label: Blog
@@ -13,3 +14,10 @@ collections:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+  - name: publication
+    label: Publication
+    folder: _publication
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: url, label: Url }

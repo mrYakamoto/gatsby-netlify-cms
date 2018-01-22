@@ -13,4 +13,4 @@ collections:
       - {name: url, label: URL}
       - {name: title, label: Title}
       - {publication: publication, label: publication}
-      - {name: date, label: Date}
+      - { name: date, label: Date, widget: date }

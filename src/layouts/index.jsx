@@ -2,13 +2,15 @@ import React from 'react'
 
 import './index.scss'
 
-const MainLayout = (props) => {
-  return (
-    <div>
-      <h1>LAYOUT</h1>
-      {props.children()}
-    </div>
-  )
+class MainLayout extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>LAYOUT2</h1>
+        {this.props.children()}
+      </div>
+    )
+  }
 }
 
 export default MainLayout

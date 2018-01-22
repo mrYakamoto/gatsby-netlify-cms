@@ -7,18 +7,9 @@ media_folder: static/assets
 collections:
   - name: blog
     label: Blog
-    folder: blog
+    folder: _blog
     create: true
     fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
-  - name: article
-    label: Article
-    folder: article
-    create: true
-    fields:
-      - {name: url, label: URL}
-      - {name: title, label: Title}
-      - {publication: publication, label: publication}
-      - {name: date, label: Date}

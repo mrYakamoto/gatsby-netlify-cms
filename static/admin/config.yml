@@ -5,12 +5,22 @@ backend:
 media_folder: static/assets
 
 collections:
-  - name: article
+  - name: articles
     label: Article
     folder: article
     create: true
     fields:
       - {name: url, label: URL}
       - {name: title, label: Title}
-      - {publication: publication, label: publication}
-      - { name: date, label: Date, widget: date }
+      - {name: date, label: Date, widget: date}
+      - {name: publication, label: Publication, widget: relation, collection: publications, searchFields: [name], valueField: name}
+      # TODO: add image field
+
+  - name: publications
+    label: Publication
+    folder: publication
+    create: true
+    fields:
+      - {name: name, label: Name}
+      - {name: url, label: URL}
+      # TODO: add logo image field

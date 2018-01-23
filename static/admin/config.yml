@@ -17,6 +17,7 @@ collections:
     label: Article
     folder: content/_article
     create: true
+    slug: "{{slug}}"
     fields:
       - { name: title, label: Title }
       - { name: publication, label: Publication, widget: relation, collection: publication, searchFields: [title], valueField: title }

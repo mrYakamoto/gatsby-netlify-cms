@@ -14,7 +14,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         edges {
           node {
             frontmatter {
-              path
+              title
             }
           }
         }
@@ -27,7 +27,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
-        path: node.frontmatter.path,
+        path: node.frontmatter.title,
         component: articleTemplate,
         context: {}, // additional data can be passed via context
       });
